@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div>
+            Login
+        </div> 
+        <form method="POST">
+            {%csrf_token%}
+            <input type="email" placeholder="Enter your Email id" name="user_email">
+            <input type="password" placeholder="Enter Your password" name = "user_password">
+            <input type="submit" >
+        </form>
+        <a href="http://127.0.0.1:8000/signup">signup</a>
+    </div>
+
+</body>
+</html>

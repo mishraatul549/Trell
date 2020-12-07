@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div>
+            <h2>Add Movie</h2> 
+            <h3>{{msg}}</h3>
+        </div>
+        <div>
+            <form method="POST">
+                {%csrf_token%}
+                <input type="text" placeholder="Enter Movie Name" name="name">
+                <input type="text" placeholder="Enter description" name = "description">
+                <input type="text" placeholder="Enter director" name="director">
+                <input type="text" placeholder="Enter Duration" name="duration">
+                <input type="submit" >
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1> Add timing for movie {{movie.movie_name}}</h1><br>
+        <h3>{{msg}}</h3>
+        <form method="POST">
+            {%csrf_token%}
+            <input type="text" placeholder="Enter timing" name="timing">
+            <input type="text" placeholder="Enter price " name = "price">
+            <input type="number" placeholder="Enter no of ticket" name="no_of_ticket">
+            <input type="submit">
+        
+        </form>
+    </div>
+</body>
+</html>
